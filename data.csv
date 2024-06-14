@@ -54,3 +54,13 @@ Food,Calories,Protein,Fat,Fiber
 "Milk",42,3.4,1.0,0.0
 "Oats",389,16.9,6.9,10.6
 "Protein Powder",400,80.0,5.0,0.0
+"Apple",52,0.3,0.2,2.4
+"Banana",89,1.1,0.3,2.6
+"Orange",47,0.9,0.1,2.4
+"Strawberry",32,0.7,0.3,2.0
+"Blueberry",57,0.7,0.3,2.4
+"Grapes",69,0.6,0.2,0.9
+"Watermelon",30,0.6,0.2,0.4
+"Mango",60,0.8,0.4,1.6
+"Pineapple",50,0.5,0.1,1.4
+"Peach",39,0.9,0.3,1.5
