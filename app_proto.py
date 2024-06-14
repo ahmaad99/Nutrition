@@ -107,3 +107,15 @@ if not st.session_state.adding_food and st.session_state.food_list:
     record_df = pd.concat([record_df, new_record], ignore_index=True)
     record_df.to_csv(record_file, index=False)
     st.write("Record saved to CSV.")
+
+
+
+
+
+
+if not record_df.empty:
+    st.title("Nutritional Records Over Time")
+    record_df['Date'] = pd.to_datetime(record_df['Date'])
+    record_df = record_df.set_index('Date')
+    
+    st.line_chart(record_df[['Calories', 'Protein', 'Fat', 'Fiber']])
