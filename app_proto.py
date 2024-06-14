@@ -98,6 +98,6 @@ if not st.session_state.adding_food and st.session_state.food_list:
         'Fat': total_fat,
         'Fiber': total_fiber
     }
-     record_df = pd.concat([record_df, new_record], ignore_index=True)
+    record_df = pd.concat([record_df, new_record], ignore_index=True)
     record_df.to_csv(record_file, index=False)
     st.write("Record saved to CSV.")
