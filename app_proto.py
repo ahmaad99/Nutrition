@@ -87,17 +87,23 @@ if not st.session_state.adding_food and st.session_state.food_list:
     st.write(f"Total Fiber: {total_fiber}g")
 
     # Get current date
-    today = date.today()
-    st.write(f"Date: {today}")
-
+    today = date.today().isoformat()  # Ensure the date is in ISO format
+    
     # Save the results to the CSV file
-    new_record = {
+    new_record = pd.DataFrame([{
         'Date': today,
         'Calories': total_calories,
         'Protein': total_protein,
         'Fat': total_fat,
         'Fiber': total_fiber
-    }
+    }], columns=['Date', 'Calories', 'Protein', 'Fat', 'Fiber'])  # Ensure columns order
+    
+    st.write("New record to be added:")
+    st.write(new_record)
+    
+    st.write("Existing records:")
+    st.write(record_df)
+    
     record_df = pd.concat([record_df, new_record], ignore_index=True)
     record_df.to_csv(record_file, index=False)
     st.write("Record saved to CSV.")
