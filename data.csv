@@ -19,6 +19,7 @@ Food,Calories,Protein,Fat,Fiber
 "Cottage Cheese",98,11.1,4.3,0.0
 "Kale",33,2.9,0.6,2.6
 "Eggs",78,6.3,5.3,0.0
+"Egg Whitw",52,10.9,0,0
 "Hummus",70,2.0,3.0,2.0
 "Brown Rice",216,5.0,1.8,3.5
 "Grapefruit",52,0.9,0.2,2.0
@@ -65,3 +66,4 @@ Food,Calories,Protein,Fat,Fiber
 "Pineapple",50,0.5,0.1,1.4
 "Peach",39,0.9,0.3,1.5
 "Kidney Beans",127,8.7,0.5,7.4
+
